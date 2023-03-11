@@ -13,6 +13,7 @@
 		1BD8189229BBB8110033C205 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BD8189129BBB8110033C205 /* Preview Assets.xcassets */; };
 		1BD8189929BBBC9A0033C205 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD8189829BBBC9A0033C205 /* ContentViewModel.swift */; };
 		1BD8189B29BCE6040033C205 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD8189A29BCE6040033C205 /* LoadingView.swift */; };
+		1BD8189E29BCFBB00033C205 /* img1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BD8189D29BCFBAF0033C205 /* img1.png */; };
 		6E01AD0BE5B6B4D65B01ECFB /* Pods_webbview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862181D48E8DE8429CD647D9 /* Pods_webbview.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		1BD8189829BBBC9A0033C205 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		1BD8189A29BCE6040033C205 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		1BD8189C29BCFAA00033C205 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1BD8189D29BCFBAF0033C205 /* img1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img1.png; sourceTree = "<group>"; };
 		499D74E013968B3ED933D958 /* Pods-webbview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-webbview.release.xcconfig"; path = "Target Support Files/Pods-webbview/Pods-webbview.release.xcconfig"; sourceTree = "<group>"; };
 		862181D48E8DE8429CD647D9 /* Pods_webbview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_webbview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F176A9EA57FABB90B99FAFB4 /* Pods-webbview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-webbview.debug.xcconfig"; path = "Target Support Files/Pods-webbview/Pods-webbview.debug.xcconfig"; sourceTree = "<group>"; };
@@ -46,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				1BD8189C29BCFAA00033C205 /* README.md */,
+				1BD8189D29BCFBAF0033C205 /* img1.png */,
 				1BD8188929BBB80E0033C205 /* webbview */,
 				1BD8188829BBB80E0033C205 /* Products */,
 				5ECE3D485618F5AB40DC172E /* Pods */,
@@ -159,6 +162,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BD8189E29BCFBB00033C205 /* img1.png in Resources */,
 				1BD8189229BBB8110033C205 /* Preview Assets.xcassets in Resources */,
 				1BD8188F29BBB8110033C205 /* Assets.xcassets in Resources */,
 			);
