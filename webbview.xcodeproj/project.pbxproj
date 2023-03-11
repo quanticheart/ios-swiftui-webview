@@ -11,6 +11,9 @@
 		1BD8188D29BBB80E0033C205 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD8188C29BBB80E0033C205 /* ContentView.swift */; };
 		1BD8188F29BBB8110033C205 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BD8188E29BBB8110033C205 /* Assets.xcassets */; };
 		1BD8189229BBB8110033C205 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BD8189129BBB8110033C205 /* Preview Assets.xcassets */; };
+		1BD8189929BBBC9A0033C205 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD8189829BBBC9A0033C205 /* ContentViewModel.swift */; };
+		1BD8189B29BCE6040033C205 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD8189A29BCE6040033C205 /* LoadingView.swift */; };
+		6E01AD0BE5B6B4D65B01ECFB /* Pods_webbview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862181D48E8DE8429CD647D9 /* Pods_webbview.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,12 @@
 		1BD8188C29BBB80E0033C205 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1BD8188E29BBB8110033C205 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BD8189129BBB8110033C205 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1BD8189829BBBC9A0033C205 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		1BD8189A29BCE6040033C205 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		1BD8189C29BCFAA00033C205 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		499D74E013968B3ED933D958 /* Pods-webbview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-webbview.release.xcconfig"; path = "Target Support Files/Pods-webbview/Pods-webbview.release.xcconfig"; sourceTree = "<group>"; };
+		862181D48E8DE8429CD647D9 /* Pods_webbview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_webbview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F176A9EA57FABB90B99FAFB4 /* Pods-webbview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-webbview.debug.xcconfig"; path = "Target Support Files/Pods-webbview/Pods-webbview.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E01AD0BE5B6B4D65B01ECFB /* Pods_webbview.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +45,11 @@
 		1BD8187E29BBB80E0033C205 = {
 			isa = PBXGroup;
 			children = (
+				1BD8189C29BCFAA00033C205 /* README.md */,
 				1BD8188929BBB80E0033C205 /* webbview */,
 				1BD8188829BBB80E0033C205 /* Products */,
+				5ECE3D485618F5AB40DC172E /* Pods */,
+				5353E196C6D2828C0147E34F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,8 +64,10 @@
 		1BD8188929BBB80E0033C205 /* webbview */ = {
 			isa = PBXGroup;
 			children = (
-				1BD8188A29BBB80E0033C205 /* webbviewApp.swift */,
+				1BD8189A29BCE6040033C205 /* LoadingView.swift */,
 				1BD8188C29BBB80E0033C205 /* ContentView.swift */,
+				1BD8189829BBBC9A0033C205 /* ContentViewModel.swift */,
+				1BD8188A29BBB80E0033C205 /* webbviewApp.swift */,
 				1BD8188E29BBB8110033C205 /* Assets.xcassets */,
 				1BD8189029BBB8110033C205 /* Preview Content */,
 			);
@@ -67,6 +82,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		5353E196C6D2828C0147E34F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				862181D48E8DE8429CD647D9 /* Pods_webbview.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5ECE3D485618F5AB40DC172E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F176A9EA57FABB90B99FAFB4 /* Pods-webbview.debug.xcconfig */,
+				499D74E013968B3ED933D958 /* Pods-webbview.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +106,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1BD8189529BBB8110033C205 /* Build configuration list for PBXNativeTarget "webbview" */;
 			buildPhases = (
+				F57A37B0AE2FB1A6C49903A6 /* [CP] Check Pods Manifest.lock */,
 				1BD8188329BBB80E0033C205 /* Sources */,
 				1BD8188429BBB80E0033C205 /* Frameworks */,
 				1BD8188529BBB80E0033C205 /* Resources */,
+				4BF8815D625226D449789EA5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,12 +166,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4BF8815D625226D449789EA5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-webbview/Pods-webbview-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-webbview/Pods-webbview-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-webbview/Pods-webbview-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F57A37B0AE2FB1A6C49903A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-webbview-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1BD8188329BBB80E0033C205 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1BD8188D29BBB80E0033C205 /* ContentView.swift in Sources */,
+				1BD8189B29BCE6040033C205 /* LoadingView.swift in Sources */,
+				1BD8189929BBBC9A0033C205 /* ContentViewModel.swift in Sources */,
 				1BD8188B29BBB80E0033C205 /* webbviewApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +339,7 @@
 		};
 		1BD8189629BBB8110033C205 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F176A9EA57FABB90B99FAFB4 /* Pods-webbview.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -290,6 +369,7 @@
 		};
 		1BD8189729BBB8110033C205 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 499D74E013968B3ED933D958 /* Pods-webbview.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
